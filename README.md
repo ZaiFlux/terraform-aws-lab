@@ -176,6 +176,4 @@ This lab demonstrates:
 - Git-based Infrastructure as Code workflow
 ```
 
----
 
-If you want, I can next :contentReference[oaicite:0]{index=0} 🚀

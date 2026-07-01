@@ -175,5 +175,3 @@ This lab demonstrates:
 - Version locking and dependency management
 - Git-based Infrastructure as Code workflow
 ```
-
-

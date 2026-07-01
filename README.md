@@ -88,33 +88,28 @@ terraform version
 
 ## 📦 Key Concepts
 
-### Terraform Provider
+Terraform Provider:
 A plugin that allows Terraform to interact with external APIs such as AWS.
 
 ---
 
-### Terraform Registry
+Terraform Registry:
 A public repository for providers and modules:
 https://registry.terraform.io
 
 ---
 
-### terraform init
+terraform init:
 Initializes the working directory and installs required providers.
 
 ---
 
-### .terraform directory
-Stores:
-- Downloaded provider binaries
-- Plugins
-- Cache data
-
-This directory is managed by Terraform and should not be modified manually.
+.terraform directory:
+Stores downloaded provider binaries, plugins, and cache data. This is managed by Terraform and should not be modified manually.
 
 ---
 
-### .terraform.lock.hcl
+.terraform.lock.hcl:
 Locks provider versions to ensure:
 - Consistent deployments
 - Reproducible environments
@@ -126,14 +121,10 @@ Similar to:
 
 ---
 
-### Provider Version Pinning
-
+Provider Version Pinning:
 version = "~> 6.0"
 
-Ensures:
-- Stable provider updates within the same major version
-- Reduced risk of breaking changes
-- Predictable infrastructure behavior
+Ensures stable provider updates within the same major version and prevents breaking changes.
 
 ---
 
@@ -147,9 +138,4 @@ Ensures:
 
 ## 🎯 Learning Outcome
 
-This lab demonstrates:
-
-- Terraform project initialization
-- Provider configuration and installation
-- Version locking and dependency management
-- Git-based infrastructure workflow
+This lab demonstrates Terraform project initialization, provider configuration, version locking, and Git-based infrastructure workflow.

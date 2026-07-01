@@ -28,7 +28,6 @@ This lab covers the following concepts:
 - Linux (WSL environment)
 - Git & GitHub
 
----
 
 📁 Project Structure
 terraform-aws-lab/
@@ -37,7 +36,6 @@ terraform-aws-lab/
 ├── .terraform.lock.hcl
 └── .terraform/ (ignored by Git)
 
----
 
 ## ⚙️ Terraform Configuration
 

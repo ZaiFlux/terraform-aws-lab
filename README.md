@@ -32,19 +32,20 @@ This lab covers the following concepts:
 
 ## 📁 Project Structure
 
+Files included in this project:
 
-terraform-aws-lab/
-├── main.tf
-├── .gitignore
-├── .terraform.lock.hcl
-└── .terraform/ (ignored by Git)
+- main.tf → main Terraform configuration file
+- .gitignore → files excluded from Git tracking
+- .terraform.lock.hcl → provider version lock file
+- .terraform/ → auto-generated Terraform working directory (not tracked in Git)
 
 ---
 
 ## ⚙️ Terraform Configuration
 
-Provider Setup:
+### Provider Setup
 
+```hcl
 terraform {
   required_providers {
     aws = {
@@ -57,86 +58,3 @@ terraform {
 provider "aws" {
   region = "us-east-1"
 }
-
----
-
-## 🚀 How to Use This Project
-
-1. Clone the repository
-
-git clone https://github.com/ZaiFlux/terraform-aws-lab.git
-cd terraform-aws-lab
-
----
-
-2. Initialize Terraform
-
-terraform init
-
-Terraform performs the following actions:
-
-- Downloads required providers
-- Creates the .terraform directory
-- Generates .terraform.lock.hcl
-
----
-
-3. Verify installation
-
-terraform version
-
----
-
-## 📦 Key Concepts
-
-Terraform Provider:
-A plugin that allows Terraform to interact with external APIs such as AWS.
-
----
-
-Terraform Registry:
-A public repository for providers and modules:
-https://registry.terraform.io
-
----
-
-terraform init:
-Initializes the working directory and installs required providers.
-
----
-
-.terraform directory:
-Stores downloaded provider binaries, plugins, and cache data. This is managed by Terraform and should not be modified manually.
-
----
-
-.terraform.lock.hcl:
-Locks provider versions to ensure:
-- Consistent deployments
-- Reproducible environments
-- Team consistency
-
-Similar to:
-- package-lock.json (Node.js)
-- requirements.txt (Python)
-
----
-
-Provider Version Pinning:
-version = "~> 6.0"
-
-Ensures stable provider updates within the same major version and prevents breaking changes.
-
----
-
-## ❗ Important Notes
-
-- .terraform/ is excluded from version control
-- .terraform.lock.hcl is committed to Git
-- Provider versions are pinned for stability
-
----
-
-## 🎯 Learning Outcome
-
-This lab demonstrates Terraform project initialization, provider configuration, version locking, and Git-based infrastructure workflow.

@@ -32,6 +32,7 @@ This lab covers the following concepts:
 
 ## 📁 Project Structure
 
+
 terraform-aws-lab/
 ├── main.tf
 ├── .gitignore

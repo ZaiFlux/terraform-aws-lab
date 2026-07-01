@@ -32,13 +32,11 @@ This lab covers the following concepts:
 
 ## 📁 Project Structure
 
-
 terraform-aws-lab/
 ├── main.tf
 ├── .gitignore
 ├── .terraform.lock.hcl
 └── .terraform/ (ignored by Git)
-
 
 ---
 
@@ -46,7 +44,6 @@ terraform-aws-lab/
 
 ### Provider Setup
 
-```hcl
 terraform {
   required_providers {
     aws = {
@@ -59,73 +56,100 @@ terraform {
 provider "aws" {
   region = "us-east-1"
 }
-🚀 How to Use This Project
-1. Clone the repository
+
+---
+
+## 🚀 How to Use This Project
+
+### 1. Clone the repository
+
 git clone https://github.com/ZaiFlux/terraform-aws-lab.git
 cd terraform-aws-lab
-2. Initialize Terraform
+
+---
+
+### 2. Initialize Terraform
+
 terraform init
 
 Terraform performs the following actions:
 
-Downloads required providers
-Creates the .terraform directory
-Generates .terraform.lock.hcl
-3. Verify installation
-terraform version
-📦 Key Concepts
-🔹 Terraform Provider
+- Downloads required providers
+- Creates the `.terraform` directory
+- Generates `.terraform.lock.hcl`
 
+---
+
+### 3. Verify installation
+
+terraform version
+
+---
+
+## 📦 Key Concepts
+
+### 🔹 Terraform Provider
 A plugin that allows Terraform to interact with external APIs such as AWS.
 
-🔹 Terraform Registry
+---
 
+### 🔹 Terraform Registry
 A public repository for providers and modules:
 https://registry.terraform.io
 
-🔹 terraform init
+---
 
+### 🔹 terraform init
 Initializes the working directory and installs required providers.
 
-🔹 .terraform directory
+---
 
+### 🔹 .terraform directory
 Stores:
-
-Downloaded provider binaries
-Plugins
-Cache data
+- Downloaded provider binaries
+- Plugins
+- Cache data
 
 This directory is managed by Terraform and should not be modified manually.
 
-🔹 .terraform.lock.hcl
+---
 
+### 🔹 .terraform.lock.hcl
 Locks provider versions to ensure:
-
-Consistent deployments
-Reproducible environments
-Team consistency
+- Consistent deployments
+- Reproducible environments
+- Team consistency
 
 Similar to:
+- package-lock.json (Node.js)
+- requirements.txt (Python)
 
-package-lock.json (Node.js)
-requirements.txt (Python)
-🔹 Provider Version Pinning
+---
+
+### 🔹 Provider Version Pinning
+
 version = "~> 6.0"
 
 Ensures:
+- Stable provider updates within the same major version
+- Reduced risk of breaking changes
+- Predictable infrastructure behavior
 
-Stable provider updates within the same major version
-Reduced risk of breaking changes
-Predictable infrastructure behavior
-❗ Important Notes
-.terraform/ is excluded from version control
-.terraform.lock.hcl is committed to Git
-Provider versions are pinned for stability
-🎯 Learning Outcome
+---
+
+## ❗ Important Notes
+
+- .terraform/ is excluded from version control
+- .terraform.lock.hcl is committed to Git
+- Provider versions are pinned for stability
+
+---
+
+## 🎯 Learning Outcome
 
 This lab demonstrates:
 
-Terraform project initialization
-Provider configuration and installation
-Version locking and dependency management
-Git-based infrastructure workflow
+- Terraform project initialization
+- Provider configuration and installation
+- Version locking and dependency management
+- Git-based infrastructure workflow

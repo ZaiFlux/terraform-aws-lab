@@ -1,6 +1,6 @@
 # 🚀 Terraform AWS Provider Lab
 
-This project is a beginner-friendly Terraform lab focused on understanding the fundamentals of **Infrastructure as Code (IaC)** using AWS as the provider.
+This project is a beginner-friendly Terraform lab focused on understanding the fundamentals of Infrastructure as Code (IaC) using AWS as the provider.
 
 It demonstrates how to initialize a Terraform project, configure providers, and manage dependencies using the Terraform Registry.
 
@@ -8,25 +8,25 @@ It demonstrates how to initialize a Terraform project, configure providers, and 
 
 ## 📌 Project Overview
 
-This lab covers the following concepts:
+This lab covers:
 
-- What Terraform is
-- Infrastructure as Code (IaC)
-- How Terraform providers work
-- Terraform Registry usage
-- Terraform project initialization
-- Purpose of `.terraform` directory
-- Purpose of `.terraform.lock.hcl`
-- Provider version pinning
+- What Terraform is  
+- Infrastructure as Code (IaC)  
+- How Terraform providers work  
+- Terraform Registry usage  
+- Terraform project initialization  
+- Purpose of .terraform directory  
+- Purpose of .terraform.lock.hcl  
+- Provider version pinning  
 
 ---
 
 ## 🛠️ Technologies Used
 
-- Terraform v1.x
-- AWS Provider (`hashicorp/aws`)
-- Linux (WSL environment)
-- Git & GitHub
+- Terraform v1.x  
+- AWS Provider (hashicorp/aws)  
+- Linux (WSL environment)  
+- Git & GitHub  
 
 ---
 
@@ -37,7 +37,7 @@ Files in this project:
 main.tf → main Terraform configuration file  
 .gitignore → Git ignored files  
 .terraform.lock.hcl → provider lock file  
-.terraform/ → auto-generated Terraform working directory (not committed)
+.terraform/ → auto-generated Terraform working directory (not committed)  
 
 ---
 
@@ -46,42 +46,42 @@ main.tf → main Terraform configuration file
 Provider Setup:
 
 terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 6.0"
-    }
-  }
+required_providers {
+aws = {
+source = "hashicorp/aws"
+version = "~> 6.0"
+}
+}
 }
 
 provider "aws" {
-  region = "us-east-1"
+region = "us-east-1"
 }
 
 ---
 
 ## 🚀 How to Use This Project
 
-1. Clone the repository
+Clone the repository:
 
 git clone https://github.com/ZaiFlux/terraform-aws-lab.git  
 cd terraform-aws-lab  
 
 ---
 
-2. Initialize Terraform
+Initialize Terraform:
 
 terraform init  
 
 Terraform performs:
 
 - Downloads required providers  
-- Creates `.terraform` directory  
-- Generates `.terraform.lock.hcl`  
+- Creates .terraform directory  
+- Generates .terraform.lock.hcl  
 
 ---
 
-3. Verify installation
+Verify installation:
 
 terraform version  
 

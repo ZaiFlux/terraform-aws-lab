@@ -45,7 +45,6 @@ Files included in this project:
 
 ### Provider Setup
 
-```hcl
 terraform {
   required_providers {
     aws = {
@@ -58,3 +57,72 @@ terraform {
 provider "aws" {
   region = "us-east-1"
 }
+
+---
+
+## 🚀 How to Use This Project
+
+1. Clone the repository
+
+git clone https://github.com/ZaiFlux/terraform-aws-lab.git
+cd terraform-aws-lab
+
+---
+
+2. Initialize Terraform
+
+terraform init
+
+Terraform performs the following actions:
+
+- Downloads required providers
+- Creates the `.terraform` directory
+- Generates `.terraform.lock.hcl`
+
+---
+
+3. Verify installation
+
+terraform version
+
+---
+
+## 📦 Key Concepts
+
+Terraform Provider:
+A plugin that allows Terraform to interact with external APIs such as AWS.
+
+Terraform Registry:
+https://registry.terraform.io
+
+terraform init:
+Initializes the working directory and installs required providers.
+
+.terraform directory:
+Stores provider binaries, plugins, and cache data. It is auto-generated and should not be edited.
+
+.terraform.lock.hcl:
+Locks provider versions to ensure consistent environments and reproducible deployments.
+
+Similar tools:
+- package-lock.json (Node.js)
+- requirements.txt (Python)
+
+Provider Version Pinning:
+version = "~> 6.0"
+
+Ensures stable updates within the same major version and prevents breaking changes.
+
+---
+
+## ❗ Important Notes
+
+- .terraform/ is excluded from Git
+- .terraform.lock.hcl is committed to ensure consistency
+- Provider versions are pinned for stability
+
+---
+
+## 🎯 Learning Outcome
+
+This lab demonstrates Terraform project setup, provider configuration, dependency management, and Git-based infrastructure workflow.

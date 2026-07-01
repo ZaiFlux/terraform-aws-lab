@@ -30,7 +30,8 @@ This lab covers the following concepts:
 
 ---
 
-📁 Project Structure
+## 📁 Project Structure
+
 terraform-aws-lab/
 ├── main.tf
 ├── .gitignore
@@ -41,7 +42,7 @@ terraform-aws-lab/
 
 ## ⚙️ Terraform Configuration
 
-### Provider Setup
+Provider Setup:
 
 terraform {
   required_providers {
@@ -60,26 +61,26 @@ provider "aws" {
 
 ## 🚀 How to Use This Project
 
-### 1. Clone the repository
+1. Clone the repository
 
 git clone https://github.com/ZaiFlux/terraform-aws-lab.git
 cd terraform-aws-lab
 
 ---
 
-### 2. Initialize Terraform
+2. Initialize Terraform
 
 terraform init
 
 Terraform performs the following actions:
 
 - Downloads required providers
-- Creates the `.terraform` directory
-- Generates `.terraform.lock.hcl`
+- Creates the .terraform directory
+- Generates .terraform.lock.hcl
 
 ---
 
-### 3. Verify installation
+3. Verify installation
 
 terraform version
 
@@ -87,23 +88,23 @@ terraform version
 
 ## 📦 Key Concepts
 
-### 🔹 Terraform Provider
+### Terraform Provider
 A plugin that allows Terraform to interact with external APIs such as AWS.
 
 ---
 
-### 🔹 Terraform Registry
+### Terraform Registry
 A public repository for providers and modules:
 https://registry.terraform.io
 
 ---
 
-### 🔹 terraform init
+### terraform init
 Initializes the working directory and installs required providers.
 
 ---
 
-### 🔹 .terraform directory
+### .terraform directory
 Stores:
 - Downloaded provider binaries
 - Plugins
@@ -113,7 +114,7 @@ This directory is managed by Terraform and should not be modified manually.
 
 ---
 
-### 🔹 .terraform.lock.hcl
+### .terraform.lock.hcl
 Locks provider versions to ensure:
 - Consistent deployments
 - Reproducible environments
@@ -125,7 +126,7 @@ Similar to:
 
 ---
 
-### 🔹 Provider Version Pinning
+### Provider Version Pinning
 
 version = "~> 6.0"
 

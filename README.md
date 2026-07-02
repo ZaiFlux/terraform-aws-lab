@@ -1,4 +1,4 @@
-# 🚀 Terraform AWS Provider Lab
+# 🚀 Terraform AWS Provider La
 
 This project is a beginner-friendly Terraform lab focused on understanding the fundamentals of **Infrastructure as Code (IaC)** using AWS as the provider.
 
